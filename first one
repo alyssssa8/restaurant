@@ -1,0 +1,143 @@
+https://semantic-ui.com/collections/menu.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"> //charactor encoding
+  <meta name="description" http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> //info for Search engines html
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> // favorite icon html
+  <link rel="stylesheet" href="my-css-file.css"> //css file html
+  <script src="my-js-file.js"></script> //javaScript files html
+
+  <title>     </title>
+  
+  <link href="css/index.css" rel="stylesheet" />
+
+  <script src="scripts/index.js"></script>
+    
+  <style type="text/css" ></style>
+
+</head>
+
+<body>
+  <main> is for content unique to this page. Use <main> only once per page, and put it directly inside <body>. Ideally this shouldn’t be nested within other elements.
+  Definition and Usage:
+  The <main> tag specifies the main content of a document.
+  The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+
+  Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+
+
+  <header id=" "><h1>   </h1></header> // id and class are attribute
+  <header> represents a group of introductory content. If it is a child of <body> it defines the global header of a webpage, but if it’s a child of an <article> or <section> it defines a specific header for that section (try not to confuse this with titles and headings.)
+  <section id=" ">
+    <h1>  </h1>
+    <p style="clear:right">   </p>. // <p> is tag.  // <p></p> is element 
+    <h1>-<h6>, <p>, and lists are block content
+    <a href="https://www.w3schools.com"  title="The best place to find ..." target="_blank" or "_self" or "_parent" or "_top" or framename>Visit W3Schools.com! // or <p>A whole paragraph as a link.</p> </a>. //the <a> tag defines a hyperlink, which is used to link  from one page to another.  //inline content
+    target: attribute specifies where to open the linked document
+    _blank  Opens the linked document in a new window or tab
+    _self Opens the linked document in the same frame as it was clicked (this is default)
+    _parent Opens the linked document in the parent frame
+    _top  Opens the linked document in the full body of the window
+    framename Opens the linked document in a named frame
+    <img src="rel_or_abs_URL" alt="a nice short description">
+    <em>Emphasized text</em>. // inline content
+    <strong>Strong text</strong><br>. inline content
+    <code>A piece of computer code</code><br>
+    <samp>Sample output from a computer program</samp><br>
+    <kbd>Keyboard input</kbd><br>
+    <var>Variable</var>
+    <b>This text is bold</b>
+    <i>This text is italic</i>
+    Use <br> (empty element) for a line break
+    Use <hr> (empty element) for a horizontal rule
+    <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+    <article> encloses a block of related content that makes sense on its own without the rest of the page (e.g. a single blog post.)
+    Potential sources for the <article> element:
+        Forum post
+        Blog post
+        News story
+        Comment
+    <section> is similar to <article>, but it is more for grouping together a single part of the page that constitutes one single piece of functionality. It’s considered best practice to begin each section with a heading;
+    <aside> contains content that is not directly related to the main content but can provide additional information indirectly related to it (glossary entries, author biography, related links, etc.)
+    <nav> contains the main navigation functionality for the page. Secondary links, etc., would not go in the navigation.
+    <nav>
+      <a href="/html/">HTML</a> 
+      <a href="/css/">CSS</a> 
+      <a href="/js/">JavaScript</a> 
+      <a href="/jquery/">jQuery</a>
+    </nav>
+    <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+
+    <span> is an inline non-semantic element, which you should only use if you can’t think of a better semantic text element to wrap your content
+    <div style="background-color:lightblue">
+    <h3>This is a heading in a div element</h3>
+    <p>This is some text in a div element.</p>
+    </div>
+    <div> is a block level non-semantic element, which you should only use if you can’t think of a better semantic block element to use
+
+    <ul style="list-style-type:disc" or style="list-style-type:circle" or style="list-style-type:square" or style="list-style-type:none">. //property to define the list item marker
+      <li>Coffee</li> //element to define a list item
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ol type="1" or type="A" or type="a" or type="I" or type="i" or start="50" or type="I" start="50">. //attribute to define the numbering type
+      <li>Coffee</li>
+      <li>Tea. //element to define an ordered list</li>
+      <li>Milk</li>
+    </ol>
+
+    <ul>. //element to define an unordered list
+      <li>Coffee</li>
+      <li>Tea
+        <ul>
+          <li>Black tea</li>
+          <li>Green tea</li>
+        </ul>
+      </li>
+      <li>Milk</li>
+    </ul>
+    <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+<dl> // element to define a description list
+  <dt>Coffee</dt> //element to define the description term
+  <dd>- black hot drink</dd> //element to describe the term in a description list
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<figure>
+    <img src="PattyWallabyScaled.jpg" class="Restricted" 
+    alt="Scaled cellphone image sized with CSS">
+    <figcaption>A caption for the figure. 
+    Styled with CSS.</figcaption>
+</figure>
+
+<blockquote cite="https://www.nobelprize.org/nobel_prizes/physics/laureates/2011/">
+    The Nobel Prize in Physics 2011 was divided, one half awarded to Saul Perlmutter, 
+    the other half jointly to Brian P. Schmidt and Adam G. Riess <em>"for the discovery
+    of the accelerating expansion of the Universe through observations of distant supernovae".</em>
+</blockquote>
+<p>The folks at Mozilla say that inline quotes are 
+<q>for short quotations that don't require 
+paragraph breaks.</q></p>. // inline
+
+<footer> represents a group of end content for a page.
+  </section>
+  
+</body>
+</html>
+
+
+Structure in Pages
+functions: navigation, buttons, menus
+summaries, captions, figures, tables
